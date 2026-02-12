@@ -1,117 +1,99 @@
+
 # Abhishek Garg
 
-Founder · Systems Architect · Behavioral Infrastructure
+Technical Founder · Behavioral Systems Architect
 
-I build systems that model behavior, not just user interaction.
+18+ years in production software engineering.
+Psychology graduate building structured behavioral modeling infrastructure.
 
-15+ years in software engineering.
-Currently formalizing behavioral modeling through academic psychology research.
-
-Building **Echoes of Mind** — a signal-based emotional intelligence platform.
+Founder of **Echos of Mind** — a signal-based behavioral intelligence platform.
 
 ---
 
-## Mission
+## What I’m Building
 
-Most mental health products optimize retention.
+### Echos of Mind
 
-I am building systems that optimize awareness.
+A deterministic behavioral signal engine designed to model longitudinal emotional patterns without relying on engagement manipulation.
 
-Instead of tracking moods, I design infrastructure that:
-
-* Detects behavioral shifts across rolling time windows
-* Triggers insights only when statistically meaningful patterns emerge
-* Reduces notification noise instead of amplifying it
-* Preserves user agency through architecture, not policy
-
-The goal is clarity at scale.
+Most mental health apps optimize retention.
+Echos of Mind optimizes signal precision.
 
 ---
 
-## Core System: Behavioral Signal Engine
+## Current System (Early Stage Metrics)
 
-A modular detection engine designed to process longitudinal behavioral data.
+* Rolling window analysis: 24h / 7d / 30d
+* Core detectors implemented: frequency spike, volatility shift, clustering, intensity deviation
+* Signal cooldown + deduplication: enforced
+* Cron-based idempotent execution layer
+* Infrastructure cost: <$100/month
+* Target: 1000 real active users (weekly signal-density sufficient) within 18 months
 
-**Capabilities**
+Active = ≥3 meaningful entries/month sustained ≥3 months.
 
-* Rolling window analysis (24h / 7d / 30d)
-* Frequency spike detection
-* Volatility and intensity modeling
-* Behavioral clustering (e.g., night activity patterns)
-* Signal deduplication and cooldown enforcement
-* Event-based insight triggering
-* AI-assisted interpretation separated from core logic
+---
 
-**Architecture**
+## Architecture Approach
 
-* NestJS modular backend (service-isolated detectors)
+Behavioral modeling must be deterministic before it becomes adaptive.
+
+System design:
+
+* Modular NestJS backend
 * Prisma schema-first modeling
-* Indexed MySQL data layer
-* Redis-backed throttling & caching
-* Cron-driven scheduled execution
-* Device lifecycle-aware push pipeline
-* Token lifecycle management with dedup safeguards
+* Indexed MySQL for window queries
+* Detector abstraction interface
+* Per-user baseline tracking
+* RBAC with granular permissions
+* Token lifecycle management
+* Dockerized dev/prod parity
 
-Design principle:
-No insight without signal. No signal without threshold.
-
----
-
-## Production Engineering Discipline
-
-Beyond behavioral modeling, I architect compliance-driven SaaS systems.
-
-**Systems Designed To Handle**
-
-* Province/state-based regulatory rules
-* Role-scoped RBAC matrices with granular permissions
-* Deterministic business rule engines
-* Scheduled reporting (PDF/CSV generation via cron orchestration)
-* Environment-parity Docker deployments
-* Cost-aware cloud deployment strategies
-* Secure auth flows with access/refresh lifecycle management
-
-I prioritize:
-
-* Schema governance
-* Deterministic logic separation
-* Failure-mode anticipation
-* Long-term maintainability
-
-Architecture is a commitment, not an experiment.
+AI interpretation is layered above the signal engine — not embedded inside it.
 
 ---
 
-## Engineering Principles
+## 3-Phase System Evolution
 
-* Engagement is not improvement.
-* Push notifications are system interrupts, not marketing tools.
-* AI must be bounded by architecture.
-* Behavioral datasets require structural integrity.
-* Delete complexity before adding features.
+**Phase 1 — Structured Journaling**
+Pattern detection based on rolling deviations.
 
----
+**Phase 2 — Adaptive Calibration**
+Per-user baseline refinement and sensitivity tuning.
 
-## Measurable Focus
+**Phase 3 — Behavioral Operating System**
+Longitudinal multi-domain behavioral abstraction.
 
-* 15+ years production software experience
-* Modular backend architectures serving multi-domain systems
-* Signal detection designed for longitudinal scaling
-* Cron-based automation layers in production
-* RBAC systems with permission matrices (not role shortcuts)
-* Full Dockerized dev/prod parity pipelines
-* CI-driven deployment workflows
-
-Building for a 10-year horizon, not quarterly feature velocity.
+Compounding asset: personal baseline evolution over time.
 
 ---
 
-## Long-Term Direction
+## Design Principles
 
-* Privacy-preserving behavioral datasets
-* Pattern-aware emotional infrastructure
-* Signal-based insight delivery
-* Scalable architecture that holds under millions of data points
+* Signal density over streaks
+* Precision over frequency
+* Restraint over engagement pressure
+* Longitudinal modeling over reactive feedback
 
-The moat is not UI.
-The moat is structured behavioral modeling.
+The system should send fewer insights as it becomes more accurate.
+
+---
+
+## Monetization Direction
+
+Aligned with depth of behavioral clarity:
+
+* Premium adaptive calibration layer
+* Longitudinal behavioral reports
+* Institutional behavioral infrastructure (long-term)
+
+No ads. No retention engineering.
+
+---
+
+## Long-Term Thesis
+
+Clarity compounds when behavior is structured over time.
+
+Echos of Mind begins as a journaling platform.
+It evolves into adaptive behavioral infrastructure.
